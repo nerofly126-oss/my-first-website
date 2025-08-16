@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #4CAF50;
+  color: #fff;
+}
+
+.hero h1 {
+  margin-bottom: 15px;
+}
+
+/* Plans Section */
+.plans {
+  padding: 30px 20px;
+}
+
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.plan-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.plan-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+/* Checkout */
+.checkout form {
+  max-width: 400px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.checkout label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.checkout input, 
+.checkout select, 
+.checkout button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.checkout button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background: #45a049;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  background: #222;
+  color: #fff;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav a {
+    margin: 5px 0;
+  }
+}

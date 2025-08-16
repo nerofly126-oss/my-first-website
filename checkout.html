@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DATABAZE - Purchase</title>
+</head>
+<body>
+  <header>
+    <div class="logo">DATABAZE</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="plans.html">Data Plans</a>
+      <a href="checkout.html">Purchase</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="checkout">
+    <h1>Purchase Data Plan</h1>
+    <form id="purchaseForm">
+      <label for="operator">Select Network</label>
+      <select id="operator" required>
+        <option value="">-- Choose Operator --</option>
+        <option>MTN</option>
+        <option>Airtel</option>
+        <option>Glo</option>
+        <option>9mobile</option>
+      </select>
+
+      <label for="plan">Select Plan</label>
+      <select id="plan" required>
+        <option value="">-- Choose Plan --</option>
+        <option>1.5GB - ₦1000</option>
+        <option>2GB - ₦1200</option>
+        <option>3.9GB - ₦1500</option>
+      </select>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="e.g. 08012345678" required>
+
+      <button type="submit">Proceed</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DATABAZE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("purchaseForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("message").innerText = 
+        "Order received! We will process your request shortly.";
+    });
+  </script>
+</body>
+</html>
